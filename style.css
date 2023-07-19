@@ -1,0 +1,226 @@
+body { 
+    background-color: white;
+    margin: 0; /*3 y 4 para ajustar márgenes*/
+    padding: 0;
+    box-sizing: content-box; 
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+header {   /* gmail, imagenes*/ 
+   height: 67px; 
+   padding: 8px;
+}
+
+nav{ /* botones gmail, imagenes, menu, avatar UBICACIÓN*/
+    height: 48px;
+    display: flex;
+    justify-content: right; /* para ajustar los botones a la derecha del renglon*/
+    align-items: center;  /* para ajustar los botones al centro del renglon*/
+    padding: 8px; 
+}
+
+.links a {    /* botones gmail, imagenes, menu, avatar FORMATO*/
+    cursor: pointer;
+    text-decoration: solid;
+    padding: 8px;
+    color: black;
+    font-size: 15px; 
+    
+} 
+
+.links a:hover{ 
+    text-decoration: underline; /*subrayar al seleccionar*/
+}
+
+.iconos img:hover{
+    background-color: #f2f2f2;
+}
+
+.container-image { /* el punto une esa parte del html con el css. al poner "img" despues, haceos referencia a TODAS las lineas que tengan img en esa seccion*/ 
+    cursor: pointer; 
+}
+
+.avatar {
+    border-radius: 50%; /*para hacer el círculo alrededor del avatar*/
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu {
+    width:28px;
+    height:28px;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.links {   /*espacio entre los botones de gmal e imagenes*/
+    margin-right: 15px;
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+   
+}
+.container-image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+
+}
+
+.links a {/*union con html*/
+    text-decoration: none; /* quitó el subrayado de las palabras de gmail e imagenes*/
+} 
+
+.links a:hover{ /*hover es para resaltar un boton al seleccionarlo*/
+    text-decoration: underline; 
+}
+
+.google-icon img{
+    width: 272px;
+    height: 150px;     
+}
+
+.google-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 165px;
+}
+
+#box{
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search{
+    display: flex;
+    border: solid #d2d5da;
+    border-width: 1px;
+    border-radius: 30px;
+    width: 582px;
+    height: 46px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#input {
+    width: 422px;
+    height: 42px;
+    padding: 1px 130px 1px 12px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    justify-items: space-evenly;
+}
+input [type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+#box #search:hover {
+    box-shadow: 0px 0px 2px 2px rgba(56, 60, 61, 0.1);
+}
+
+.glass {
+    width: 15px;
+    height: 15px;
+    padding: 12px;
+}
+
+.microphone{
+    width: 14px;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.camara {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 18px;
+    
+}
+
+.buttons div {
+    display: block;
+    block-size: fit-content;
+    padding-left: 8px 16px;
+    cursor: pointer;
+    text-decoration: solid;
+    font-size: 14px;
+    color: #4a4d50;
+    height: 17px;
+    margin: 11px 7px;
+    border: .5px solid #ffffff;
+    background-color: rgb(248, 249, 250);
+    border-radius: 4px;
+}
+
+.buttons div:hover{
+    border: .5px solid #d2d5da;
+}
+
+footer{
+    background: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.country{
+    display: block;
+    padding: 15px 30px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(218, 220, 224);
+    font-size: 15px;
+    color: #70757a;
+    height: 17px;
+    text-align: left;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+footer  footer-left{
+    justify-content: left;
+}
+
+footer footer-right{
+    justify-content: right;
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+}
